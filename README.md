@@ -15,7 +15,7 @@ yarn isntall --save gejson-redux # for those who prefer yarn...
 
 This module works like a normal Redux module. You should do something like that:
 
-```ecmascript 6
+```js
 import { createStore, combineReducers } from 'redux'
 import { geoJSONReducer } from "geojson-redux";
 
@@ -29,7 +29,7 @@ const store = createStore(reducer);
 
 If you want to use it in a simple way, just for GeoJSON and not in combination with other Redux reducers:
 
-```ecmascript 6
+```js
 import { createGeoJSONStore } from "geojson-redux";
 const store = createGeoJSONStore();
 ```
@@ -51,7 +51,7 @@ const store = createGeoJSONStore<Point, IMyProperties>();
 
 After you created your store you can handle your store by actions:
 
-```ecmascript 6
+```js
 store.dispatch(action);
 ```
 
@@ -65,7 +65,7 @@ You can perform the following action:
 
 ### Add feature
 
-```ecmascript 6
+```js
 const geoJSONFeature = {
     geometry: {
         type: "Point",
@@ -91,7 +91,7 @@ store.dispatch(addAction);
 
 ### Remove feature
 
-```ecmascript 6
+```js
 const removeAction = {
     type: "removeFeature",
     featureId: "feature-id",
@@ -102,7 +102,7 @@ store.dispatch(removeAction);
 
 ### Change geometry of a feature
 
-```ecmascript 6
+```js
 const geoJSONGeometry = {
     coordinates: [1,2],
     type: "Point",
@@ -118,7 +118,7 @@ store.dispatch(changeGeometryAction);
 
 ### Change properties of a feature
 
-```ecmascript 6
+```js
 const geoJSONProperties = {
     name: "just a test",
     test: "OK",
