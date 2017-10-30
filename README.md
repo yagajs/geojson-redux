@@ -12,16 +12,16 @@ YAGA's geojson-redux is a predictable state container implementation for [GeoJSO
 First you have to install this library from npm:
 
 ```bash
-npm install --save geojson-redux
+npm install --save @yaga/geojson-redux
 # OR
-yarn isntall --save gejson-redux # for those who prefer yarn...
+yarn isntall --save @yaga/geojson-redux # for those who prefer yarn...
 ```
 
 This module works like a normal Redux module. You should do something like that:
 
 ```js
 import { createStore, combineReducers } from "redux"
-import { geoJSONReducer } from "geojson-redux";
+import { geoJSONReducer } from "@yaga/geojson-redux";
 
 const reducer = combineReducers({
     geojson: geoJSONReducer,
@@ -34,14 +34,14 @@ const store = createStore(reducer);
 If you want to use it in a simple way, just for GeoJSON and not in combination with other Redux reducers:
 
 ```js
-import { createGeoJSONStore } from "geojson-redux";
+import { createGeoJSONStore } from "@yaga/geojson-redux";
 const store = createGeoJSONStore();
 ```
 
 *Note: This module is developed in TypeScript. You can specify the Geometry and properties type*
 
 ```typescript
-import { createGeoJSONStore } from "geojson-redux";
+import { createGeoJSONStore } from "@yaga/geojson-redux";
 import { Point } from "geojson";
 
 interface IMyProperties {
