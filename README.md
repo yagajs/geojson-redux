@@ -1,4 +1,6 @@
 # GeoJSON in states with Redux
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fyagajs%2Fgeojson-redux.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fyagajs%2Fgeojson-redux?ref=badge_shield)
+
 
 YAGA's geojson-redux is a predictable state container implementation for [GeoJSON](http://geojson.org/) in
 [Redux](http://redux.js.org/).
@@ -135,3 +137,6 @@ store.dispatch(changePropertiesAction);
 ## License
 
 This library is released under the [ISC License](LICENSE).
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fyagajs%2Fgeojson-redux.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fyagajs%2Fgeojson-redux?ref=badge_large)
