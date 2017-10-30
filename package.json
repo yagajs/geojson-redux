@@ -1,6 +1,6 @@
 {
   "name": "@yaga/geojson-redux",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A redux implementation for states in geojson",
   "main": "lib/index.js",
   "scripts": {
