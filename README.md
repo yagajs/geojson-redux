@@ -1,6 +1,8 @@
 # GeoJSON in states with Redux
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fyagajs%2Fgeojson-redux.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fyagajs%2Fgeojson-redux?ref=badge_shield)
 
+[![Build Status](https://travis-ci.org/yagajs/leaflet-ng2.svg?branch=develop)](https://travis-ci.org/yagajs/geojson-redux)
+[![Coverage Status](https://coveralls.io/repos/github/yagajs/leaflet-ng2/badge.svg?branch=develop)](https://coveralls.io/github/yagajs/geojson-redux?branch=master)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fyagajs%2Fgeojson-redux.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fyagajs%2Fgeojson-redux?ref=badge_shield)
 
 YAGA's geojson-redux is a predictable state container implementation for [GeoJSON](http://geojson.org/) in
 [Redux](http://redux.js.org/).
@@ -18,7 +20,7 @@ yarn isntall --save gejson-redux # for those who prefer yarn...
 This module works like a normal Redux module. You should do something like that:
 
 ```js
-import { createStore, combineReducers } from 'redux'
+import { createStore, combineReducers } from "redux"
 import { geoJSONReducer } from "geojson-redux";
 
 const reducer = combineReducers({
