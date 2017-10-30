@@ -1,0 +1,46 @@
+{
+  "name": "@yaga/geojson-redux",
+  "version": "1.0.0",
+  "description": "A redux implementation for states in geojson",
+  "main": "lib/index.js",
+  "scripts": {
+    "transpile": "tsc",
+    "lint": "tslint ts/*.ts",
+    "test": "npm run lint && npm run transpile && istanbul cover _mocha -- -- test/*.js",
+    "doc": "typedoc --out ./typedoc/ --exclude ts/tile-layer.directive.spec.ts --mode file ts/"
+  },
+  "keywords": [
+    "redux",
+    "geojson",
+    "spatial"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yagajs/geojson-redux.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yagajs/geojson-redux/issues"
+  },
+  "homepage": "https://github.com/yagajs/geojson-redux#readme",
+  "author": "Arne Schubert <atd.schubert@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.0.4",
+    "@types/mocha": "^2.2.43",
+    "@yaga/generic-geojson": "^1.0.0",
+    "browserify": "^14.4.0",
+    "chai": "^4.1.2",
+    "coveralls": "^3.0.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.5.3",
+    "tslint": "^5.7.0",
+    "typedoc": "^0.8.0",
+    "typescript": "^2.5.3"
+  },
+  "dependencies": {
+    "@types/redux": "^3.6.0",
+    "@types/uuid": "^3.4.2",
+    "redux": "^3.7.2",
+    "uuid": "^3.1.0"
+  }
+}
